@@ -1,0 +1,28 @@
+# --- Normalize line endings ---
+# Use LF inside the repo, CRLF on Windows checkout
+* text=auto eol=lf
+
+# --- Ensure specific file types are always LF ---
+*.js  text eol=lf
+*.json text eol=lf
+*.md  text eol=lf
+*.sh  text eol=lf
+*.yml text eol=lf
+
+# --- Mark common binary types so Git never tries to diff them ---
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.exe  binary
+*.pfx  binary
+*.key  binary
+*.pem  binary
+*.crt  binary
+
+# --- Prevent GitHub linguist from misclassifying minified JS or build output ---
+dist/* linguist-generated=true
+build/* linguist-generated=true
