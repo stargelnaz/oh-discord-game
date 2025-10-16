@@ -12,11 +12,14 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.911.0",
     "@aws-sdk/lib-dynamodb": "^3.911.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
     "discord.js": "^14.22.1",
     "dotenv": "^17.2.3",
     "eos.js": "^0.0.0",
     "eosjs": "^22.1.0",
     "eosjs-ecc": "^4.0.7",
+    "express": "^5.1.0",
     "node-fetch": "^3.3.2"
   }
 }
